@@ -1,0 +1,160 @@
+.solutionbg{
+    background-color: #5479ff;
+    width: 100%;
+    
+}
+
+.solutionbox{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    max-width: 1140px;
+    padding: 3% 0% 10% 0%;
+}
+
+
+.solutiondecimg{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+
+}
+
+.solutionintrobox{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5%;
+
+}
+
+.solutionintro{
+    width: 50%;
+    opacity: 0;
+}
+
+.solutionbtnbox{ 
+    display: flex;
+    flex-wrap: wrap;
+    width: 20%;
+
+}
+
+.solutionintrotitle{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #ffef00;
+}
+
+.solutionintrotitle_en{
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+.solutionintro img{
+    width: 80%;
+    filter: drop-shadow(2px 2px 8px rgba(0, 0, 0, 0.08));
+}
+
+.solutionintrotext{
+    color: #fff;
+    width: 80%;
+}
+
+.solutionbtn{
+    width: 50%;
+    padding: 3%;
+
+    opacity: 0;
+}
+
+.solutionbtn img{
+    width: 100%;
+    cursor: pointer;
+
+    filter: drop-shadow(1px 2px 4px rgba(0, 0, 0, 0.15));
+
+}
+
+.solutionanim{
+    opacity: 0;
+}
+
+
+@media (max-width: 1140px) {
+    .solutiondecimg{
+        width: 80%;
+    
+    }
+    .solutionbox{
+        width: 90%;
+        padding: 10% 0% 20% 0%;
+    }
+
+    .solutionintro{
+        margin-top: 5%;
+        width: 100%;
+    
+    }
+
+    .solutionintro img{
+        width: 100%;
+    }
+
+    .solutionintrotitle{
+        font-size: 3.5rem;
+    }
+    
+    .solutionintrotitle_en{
+        font-size: 3.7rem;
+    }
+    
+    .solutionintrotext{
+        width: 100%;
+    }
+    
+    .solutionbtnbox{ 
+        margin-top: 5%;
+        order: -1;
+        width: 100%;
+    
+    }
+
+    .solutionbtn{
+        width: 25%;
+        padding: 1%;
+    
+    }
+
+
+}
+
+@media (max-width: 768px) {
+    .solutiondecimg{
+        width: 100%;
+    
+    }
+
+    .solutionintrotitle{
+        font-size: 2.3rem;
+    }
+    
+    .solutionintrotitle_en{
+        font-size: 2.8rem;
+    }
+
+    .solutionintrotext{
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .solutionintro img{
+        width: 100%;
+    }
+    
+}

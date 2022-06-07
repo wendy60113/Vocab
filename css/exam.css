@@ -1,0 +1,221 @@
+.exambg{
+    background-color: #5479ff;
+    width: 100%;
+    
+    padding-bottom: 10%;
+}
+
+.exambox{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    max-width: 1140px;
+    padding: 3% 0% 0% 0%;
+}
+
+.decbox{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1%;
+
+    opacity: 0;
+}
+
+.examdeccontent{
+    padding: 2% 0 2% 0;
+    color: #fff;
+    width: 20%;
+    text-align: center;
+    
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+}
+
+.decline{
+    margin: 2% 0 2% 0;
+    width: 1%;
+    border-right: #fff 1px solid;
+}
+
+.examcontent{
+    padding: 3.5% 0 2% 3%;
+    width: 75%;
+    color: #fff;
+    line-height: 1.5rem;
+    
+}
+
+.dechightext{
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.phonebox_l{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    max-width: 1140px;
+    
+}
+
+.phoneinbox{
+    position: absolute;
+    width: 18%;
+    text-align: center;
+    padding-top: 1.5%;
+    top: 0;
+    
+}
+
+.phone{
+    position: relative;
+    width: 100%;
+    
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.shadowleft{
+    filter: drop-shadow(-6px -6px 8px rgba(0, 0, 0, 0.08));
+
+}
+
+.shadowright{
+    filter: drop-shadow(6px 6px 8px rgba(0, 0, 0, 0.08));
+  
+}
+
+.phone_decword{
+    position: relative;
+    background-color: #ffed00;
+    border-radius: 30px;
+    padding: 2% 15% 2% 15%;
+    line-height: 4rem;
+    
+}
+
+.phone_1{
+    position:relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20%;
+    filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.08));
+
+}
+
+.phone_2{
+    left: 25%; 
+    opacity: 0;
+}
+
+.phone_3{
+    left: 10%;
+    opacity: 0;
+}
+
+.phone_4{
+    right: 25%;
+    opacity: 0;
+}
+
+.phone_5{
+    right: 10%;
+    opacity: 0;
+}
+
+.phonebox_s{
+    display: none;
+}
+
+.examtitleanim{
+    opacity: 0;
+}
+
+
+@media (max-width: 1140px) {
+    .exambox{
+        width: 90%;
+        padding: 10% 0% 10% 0%;
+        text-align: center;
+    }
+
+    .decline{
+        display: none;
+    }
+
+    .decbr{
+        display: none;
+    }
+
+    .examdeccontent{
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 1% 0 1% 0;
+        background-color: #fff;
+        color: #5479ff;
+        width: 52%;
+        border-radius: 30px;
+
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+    }
+
+    .examcontent{
+        padding: 3.5% 0 2% 0%;
+        width: 100%;
+        text-align: left;
+    }
+
+    .phonebox_l{
+        width: 100%;
+        
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .decbox{
+        margin-top: 2%;
+    }
+    .examdeccontent{
+        padding: 2% 0 2% 0;
+        width: 90%;
+
+        font-size: 1.2rem;
+        line-height: 1.2rem;
+    }
+
+    .dechightext{
+        font-size: 1.5rem;
+    }
+
+    .phonebox_l{
+        display: none;
+    }
+
+    .phonebox_s{
+        display: block;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        
+        padding-bottom: 10%;
+    }
+
+    .exam_slider .item img{
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        
+        width: 80%;
+    }
+
+    .phonebox_s .exam_slider .item{
+        text-align: center;
+    }
+    
+}

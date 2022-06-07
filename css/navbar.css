@@ -1,0 +1,146 @@
+.navbarbg{
+    background-color: #000;
+    
+}
+
+.navbox{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    max-width: 1140px;
+    padding: 1% 0% 1% 0%;
+}
+
+.navlogosvga{
+    margin-right: 2%;
+}
+
+.navlogosvg{
+    height: 30px;
+    
+}
+
+.nb{
+    fill:#fff;
+}
+
+.nc{
+    fill:#cf021a;
+}
+
+.navcontent{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 0% 1% 0% 1%;
+
+}
+
+.navcontent:hover{
+    color: #999;
+}
+
+.navdeccontent{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 0% 1% 0% 1%;
+}
+
+.navdeccontent:hover{
+    color: #fff;
+}
+
+.fc{
+    fill:#fff;
+}
+
+.fd{
+    clip-path:url(#fb);
+}
+
+.fe{
+    fill:none;
+}
+
+.navwidth1{
+    width: 80%;
+}
+
+.navwidth2{
+    width: 20%;
+    display: flex;
+    align-content: center;
+    justify-content: flex-end;
+}
+
+.fbli{
+    width: 40%;
+    text-align: right;
+    padding-right: 10%;
+}
+
+.navfbsvg{
+    height: 30px;
+    margin-right: 2%;
+    
+}
+
+.navbuybtnli{
+    width: 100%;
+}
+
+.navbuybtn{
+    background-color: #cf021a;
+    border-radius: 10px;
+    line-height: 16px;
+    color: #fff;
+    text-align: center;
+    
+    cursor: pointer;
+}
+
+.navbuybtn:hover{
+    color: #fff;
+    font-weight: 600;
+}
+
+.navbuybtn:visited{
+    color: #fff;
+}
+
+
+@media (max-width: 960px) {
+    .navdeccontent{
+        display: none;
+    }
+
+    .navcontent{
+        margin: 5% 0% 0% 0%;
+    }
+
+    .navwidth2{
+        width: 50%;
+        margin-top: 10%;
+    }
+
+    .navwidth2 li{
+        margin-top: 10%;
+    }
+
+    .navbuybtn{
+        margin-bottom: 10%;
+    }
+
+    .fbli{
+        text-align: left;
+    }
+
+    .navbuybtnli{
+        width: 60%;
+    }
+
+}

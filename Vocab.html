@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+	
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+
+	<meta name="description" content="背背單字介紹">
+
+	<!-- bootstrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">	
+	
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<!--swiper-->
+	<link rel="stylesheet" href="./js/owlcarousel/dist/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="./js/owlcarousel/dist/assets/owl.theme.default.min.css">
+	<!-- components -->
+	<link rel="stylesheet" type="text/css" href="./css/vocab.css">
+	<link rel="stylesheet" type="text/css" href="./css/header.css">
+	<link rel="stylesheet" type="text/css" href="./css/painpoint.css">
+	<link rel="stylesheet" type="text/css" href="./css/solution.css">
+	<link rel="stylesheet" type="text/css" href="./css/functions.css">
+	<link rel="stylesheet" type="text/css" href="./css/exam.css">
+	<link rel="stylesheet" type="text/css" href="./css/resolve.css">
+	<link rel="stylesheet" type="text/css" href="./css/video.css">
+	<link rel="stylesheet" type="text/css" href="./css/comment.css">
+	<link rel="stylesheet" type="text/css" href="./css/product.css">
+	<link rel="stylesheet" type="text/css" href="./css/footer.css">
+	<link rel="stylesheet" type="text/css" href="./css/navbar.css">
+
+	<!--anim-->
+	<link rel="stylesheet" type="text/css" href="./css/anim.css">
+
+    <!-- font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+	
+	<title>背背單字</title>
+</head>
+<body>
+	<div id="navbar"></div>
+	<div id="header"></div>
+	<div id="painpoint"></div>
+	<div id="solution"></div>
+	<div id="functions"></div>
+	<div id="exam"></div>
+	<div id="resolve"></div>
+	<div id="video"></div>
+	<div id="comment"></div>
+	<div id="product"></div>
+	<div id="footer"></div>
+	
+	
+    <!-- JavaScript -->
+    <!-- react -->
+	<script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+	<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+	<!-- bootstrap -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+	<!-- jquery -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<!--swiper-->
+	<script src="./js/owlcarousel/dist/owl.carousel.min.js"></script>
+	<!-- scroll -->
+	<script src="./js/showonscroll/show-on-scroll.js"></script>
+	<!-- countanim -->
+	<script src="./js/countanim/jquery.waypoints.min.js"></script>
+	<script src="./js/countanim/jquery.rcounterup.js"></script>
+	<script src="./js/countanim/active.js"></script>
+	<!-- components -->
+	<script src="./js/Navbar-dist.js"></script>
+	<script src="./js/Header-dist.js"></script>
+	<script src="./js/PainPoint-dist.js"></script>
+	<script src="./js/Solution-dist.js"></script>
+	<script src="./js/Functions-dist.js"></script>
+	<script src="./js/Exam-dist.js"></script>
+	<script src="./js/Resolve-dist.js"></script>
+	<script src="./js/Video-dist.js"></script>
+	<script src="./js/Comment-dist.js"></script>
+	<script src="./js/Product-dist.js"></script>
+	<script src="./js/Footer-dist.js"></script>
+
+	<script>
+		
+		$('.painpoint_slider').owlCarousel({
+			loop:true,
+			nav:true,
+			navText: [
+				'<svg xmlns="http://www.w3.org/2000/svg" fill="#5479ff" width=70 height=70 class="bi bi-chevron-compact-left" viewBox="2 2 18 18"><path fill-rule="evenodd" d="M9.224 1.553a.5.5 0 0 1 .223.67L6.56 8l2.888 5.776a.5.5 0 1 1-.894.448l-3-6a.5.5 0 0 1 0-.448l3-6a.5.5 0 0 1 .67-.223z"/></svg>',
+				'<svg xmlns="http://www.w3.org/2000/svg" fill="#5479ff" width=70 height=70 class="bi bi-chevron-compact-right" viewBox="2 2 18 18"><path fill-rule="evenodd" d="M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671z"/></svg>'	
+			],
+			navContainer: '#pp_arrowbox',
+			
+			responsive:{
+				0:{
+					items:1,
+					stagePadding: 40,
+					margin:0
+				},
+				768:{
+					items:2,
+					stagePadding: 80,
+					margin:20
+				},
+				1141:{
+					items:2,
+					stagePadding: 80,
+					margin:40
+				},
+				1200:{
+					
+					items:3,
+					stagePadding: 30,
+					margin:40
+				}
+			}
+		});
+
+		$('.exam_slider').owlCarousel({
+			loop:true,
+			items:1,
+			stagePadding: 50,
+			margin:-30
+
+		});
+
+		$('.comment_slider').owlCarousel({
+			loop:true,
+			
+			responsive:{
+				0:{
+					items:1,
+					stagePadding: 50,
+					margin:0
+				},
+				768:{
+					items:2,
+					stagePadding: 80,
+					margin:20
+				},
+				1141:{
+					items:2,
+					stagePadding: 80,
+					margin:40
+				},
+				1200:{
+					items:3,
+					stagePadding: 30,
+					margin:40
+				}
+			}
+		});
+
+		$('.product_en_slider').owlCarousel({
+			loop:true,
+				
+			responsive:{
+				0:{
+					items:2,
+					margin:30
+				},
+				501:{
+					items:4,
+					margin:30
+				}
+				
+			}
+			
+		});
+
+		$('.product_jp_slider').owlCarousel({
+			loop:true,
+			items:2,
+			margin:30
+			
+			
+		});
+
+		$(function(){
+			$('.count-num').rCounter({
+				
+			});
+		});
+
+		$(".pptitle").waypoint(function() {
+			$(".pptitle").addClass('fade-in-4');
+		
+		}, { offset: '80%'});
+
+		$(".solutionanim").waypoint(function() {
+			$(".solutionanim").addClass('fade-in-4');
+		
+		}, { offset: '80%'});
+
+		$(".solutionintro").waypoint(function() {
+			$(".solutionintro").addClass('fade-right');
+		
+		}, { offset: '80%'});
+
+		$(".solutionbtn").waypoint(function() {
+			$(".solutionbtn").addClass('scale-up');
+			
+		}, { offset: '60%'});
+
+		$(".functitleanim").waypoint(function() {
+			$(".functitleanim").addClass('fade-in-4');
+			
+		}, { offset: '80%'});
+
+		$(".funcbtn").waypoint(function() {
+			$(".funcbtn").addClass('scale-up');
+			
+		}, { offset: '80%'});
+
+		$("#funcintro1 .funcintroimg").waypoint(function() {
+			$("#funcintro1 .funcintroimg").addClass('fade-right');
+		
+		}, { offset: '80%'});
+
+		$("#funcintro2 .funcintroimg").waypoint(function() {
+			$("#funcintro2 .funcintroimg").addClass('fade-right');
+		
+		}, { offset: '80%'});
+
+		$("#funcintro3 .funcintroimg").waypoint(function() {
+			$("#funcintro3 .funcintroimg").addClass('fade-right');
+		
+		}, { offset: '80%'});
+
+		$("#funcintro1 .funcintroitem").waypoint(function() {
+			$("#funcintro1 .funcintroitem").addClass('fade-left');
+		
+		}, { offset: '80%'});
+
+		$("#funcintro2 .funcintroitem").waypoint(function() {
+			$("#funcintro2 .funcintroitem").addClass('fade-left');
+		
+		}, { offset: '80%'});
+
+		$("#funcintro3 .funcintroitem").waypoint(function() {
+			$("#funcintro3 .funcintroitem").addClass('fade-left');
+		
+		}, { offset: '80%'});
+
+		$(".examtitleanim").waypoint(function() {
+			$(".examtitleanim").addClass('fade-in-4');
+		
+		}, { offset: '80%'});
+
+		$(".decbox").waypoint(function() {
+			$(".decbox").addClass('fade-in-1');
+		
+		}, { offset: '80%'});
+
+		$(".phone_3").waypoint(function() {
+			$(".phone_3").addClass('fade-left');
+		
+		}, { offset: '60%'});
+
+		$(".phone_2").waypoint(function() {
+			$(".phone_2").addClass('fade-left');
+		
+		}, { offset: '60%'});
+
+		$(".phone_4").waypoint(function() {
+			$(".phone_4").addClass('fade-right');
+		
+		}, { offset: '60%'});
+
+		$(".phone_5").waypoint(function() {
+			$(".phone_5").addClass('fade-right');
+		
+		}, { offset: '60%'});
+
+		$(".resolvetitlebox").waypoint(function() {
+			$(".resolvetitlebox").addClass('fade-in-4');
+		
+		}, { offset: '80%'});
+
+		$(".resolvecontent").waypoint(function() {
+			$(".resolvecontent").addClass('fade-in-1');
+		
+		}, { offset: '80%'});
+
+		$(".introleft").waypoint(function() {
+			$(".introleft").addClass('fade-up');
+		
+		}, { offset: '50%'});
+
+		$(".introright").waypoint(function() {
+			$(".introright").addClass('fade-down');
+		
+		}, { offset: '50%'});
+
+		$(".videotitleanim").waypoint(function() {
+			$(".videotitleanim").addClass('fade-in-4');
+		
+		}, { offset: '80%'});
+
+		$(".commenttitleanim").waypoint(function() {
+			$(".commenttitleanim").addClass('fade-right');
+		
+		}, { offset: '80%'});
+
+		$(".commentitemanim").waypoint(function() {
+			$(".commentitemanim").addClass('fade-up-delay');
+		
+		}, { offset: '60%'});
+
+		$(".en_box").waypoint(function() {
+			$(".en_box .pboxtitle").addClass('fade-right');
+			$(".en_box .boxline").addClass('animdelay3');
+			$(".en_box .boxline").addClass('lined');
+			$("#en_slider .owl-stage-outer .owl-stage .owl-item .item").addClass('scale-up');
+		
+		}, { offset: '80%'});
+
+		$(".jp_box").waypoint(function() {
+			$(".jp_box .pboxtitle").addClass('fade-right');
+			$(".jp_box .boxline").addClass('animdelay3');
+			$(".jp_box .boxline").addClass('lined');
+			$("#jp_slider .owl-stage-outer .owl-stage .owl-item .item").addClass('scale-up');
+		
+		}, { offset: '80%'});
+
+		$(".kr_box").waypoint(function() {
+			$(".kr_box .pboxtitle").addClass('fade-right');
+			$(".kr_box .boxline").addClass('animdelay3');
+			$(".kr_box .boxline").addClass('lined');
+			$("#kr_slider .owl-stage-outer .owl-stage .owl-item .item").addClass('scale-up');
+		
+		}, { offset: '80%'});
+
+		$(".ppswiperboxanim").waypoint(function() {
+			$(".ppswiperboxanim").addClass('fade-up-delay');
+		
+		}, { offset: '60%'});
+
+	  </script>
+
+</body>
+</html>

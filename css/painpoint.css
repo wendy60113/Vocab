@@ -1,0 +1,156 @@
+.ppbox{
+    
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    max-width: 1140px;
+    padding: 3% 0% 10% 0%;
+}
+
+.pptitle{
+    opacity: 0;
+}
+
+
+.pptitle span{
+    font-size: 2.5rem;
+    line-height: 3rem;
+    font-weight: 700;
+}
+
+.swiper {
+    margin-top: 3%;
+    
+}
+
+.ppswiperbox{
+    position: relative;
+}
+
+#pp_arrowbox{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pp_arrow{
+    position: relative;
+    width: 5%;
+    top: 50%;
+    transform: translateY(50%);
+}
+
+.owl-prev, .owl-next{
+    width: 5%;
+    background: none;
+    border: none;
+}
+
+.painpoint_slider{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+}
+
+.owl-dots{
+    display: none;
+}
+
+.swiperbox{
+    margin-top: 5%;
+}
+
+.painpoint_slider img{
+    position: relative;
+    bottom: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    height: 100%;
+}
+
+.ppswiperboxdown{
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    height: 30%;
+    padding: 3% 6% 10% 6%;
+    text-align: center;
+    
+}
+
+.ppfirsttitle{
+    color: #ffef00;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.ppsectitle{
+    
+    color: #fff;
+    font-size: 1rem;
+}
+
+.ppswiperboxanim{
+    opacity: 0;
+}
+
+@media (max-width: 1140px) {
+    #pp_arrowbox{
+        display: none;
+    }
+
+    .ppbox{
+        width: 90%;
+        max-width: 1140px;
+        padding: 3% 0% 10% 0%;
+    }
+
+    .ppswiperbox{
+        height: 45%;
+        
+    }
+
+    .ppfirsttitle{
+        font-size: 1.2rem;
+    }
+
+    .painpoint_slider .owl-item{
+        transform: scale(0.75) translateY(0);
+    }
+    
+    .painpoint_slider .owl-item.active{
+        transform: scale(1) translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .ppbox{ 
+        width: 90%;
+        padding: 1% 0% 0% 0%;
+    }
+
+    .pptitle span{
+        font-size: 25px;
+        line-height: 29px;
+    }
+
+    .swiperbox{
+        margin-bottom: 10%;
+    }
+
+    .ppfirsttitle{
+        font-size: 1.3rem;
+    }
+
+}
+
+@media (max-width: 500px) {
+    
+    
+}

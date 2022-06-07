@@ -1,0 +1,47 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #fff3da;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+
+
+.firsttitle{
+    color: #fff;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    font-weight: 700;
+    
+}
+
+.sectitle{
+    color: #ffef00;
+    font-size: 3.2rem;
+    line-height: 3.2rem;
+    font-weight: 700;
+}
+
+
+
+
+@media (max-width: 1140px) {
+    body::-webkit-scrollbar {
+      display: none;
+      overflow: hidden;
+    }
+}
+
+@media (max-width: 768px) {
+    .firsttitle{
+        
+        font-size: 2rem;
+        line-height: 2rem;
+        
+    }
+    
+    .sectitle{
+        font-size: 2.3rem;
+        line-height: 2.3rem;
+    }
+}

@@ -1,0 +1,108 @@
+.resolvebgbox{
+    position: absolute;
+    width: 100%;
+}
+
+.resolvebg{
+    position: relative;
+    background-color: #5479ff;
+    height: 40vh;
+    max-height: 200px;
+    width: 100%;
+}
+
+.resolvebgimg{
+    position: relative;
+    width: 100%;
+    margin: -1px 0px 0px 0px;
+}
+
+.resolvebox{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    max-width: 1140px;
+    padding: 1% 0% 0% 0%;
+}
+
+.resolvetitlebox{
+    width: 40%;
+
+    opacity: 0;
+}
+
+.resolvecontent{
+    width: 50%;
+    color: #fff;
+    padding-top: 1%;
+
+    opacity: 0;
+}
+
+.resolveimg{
+    padding: 5% 0% 20% 0%;
+    width: 30%;
+    position:relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.mainphone{
+    position:relative;
+
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+}
+
+.introleft{
+    position: absolute;
+    top: 23%;
+    left: -25%;
+    width: 70%;
+    filter: drop-shadow(-25px 25px 0px rgba(0, 0, 0, 0.05));
+
+    opacity: 0;
+}
+
+.introright{
+    position: absolute;
+    top: 15%;
+    right: -25%;
+    width: 70%;
+    filter: drop-shadow(-25px 25px 0px rgba(0, 0, 0, 0.05));
+
+    opacity: 0;
+}
+
+@media (max-width: 1140px) {
+    .resolvebg{
+        max-height: 800px;
+    }
+
+    .resolvebox{
+        
+        width: 90%;
+        padding: 1% 0% 0% 0%;
+    }
+
+    .resolvetitlebox{
+        width: 100%;
+    }
+    
+    .resolvecontent{
+        width: 100%;
+        padding-top: 3%;
+    }
+
+    .resolveimg{
+        width: 60%;
+    }
+
+}
+
+@media (max-width: 768px) {
+}

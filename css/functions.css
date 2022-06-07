@@ -1,0 +1,229 @@
+.functionbgbox{
+    position: absolute;
+    width: 100%;
+    
+}
+
+.functionbg{
+    position: relative;
+    background-color: #5479ff;
+    height: 40vh;
+    max-height: 200px;
+    width: 100%;
+}
+
+.functionbgimg{
+    position: relative;
+    width: 100%;
+    margin: -1px 0px 0px 0px;
+}
+
+.functionbgboxbot{
+    position: absolute;
+    width: 100%;
+    margin-top: 17%;
+}
+
+.functionbgbot{
+    position: relative;
+    background-color: #5479ff;
+    height: 40vh;
+    max-height: 600px;
+    width: 100%;
+    margin: -1px 0px 0px 0px;
+}
+
+.functionbgimgbot{
+    position: relative;
+    width: 100%;
+    
+}
+
+
+.functitlebox{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    max-width: 1140px;
+    padding: 1% 0% 0% 0%;
+    margin-bottom: 5%;
+}
+
+.funcfirsttitle{
+    font-size: 1.9rem;
+}
+
+.funcbtnbox{
+    display: flex;
+    width: 50%;
+}
+
+.funcbtn{
+    width: 33.33%;
+    margin-top: 2%;
+
+    opacity: 0;
+}
+
+.funcbtn span{
+    background-color: #ffed00;
+    color: #5479ff;
+    font-weight: 500;
+    padding: 1% 12% 2% 12%;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.funcintrobox{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.funcintroimg{
+    width: 50%;
+    margin-top: 10%;
+    text-align: center;
+    
+    opacity: 0;
+}
+
+.funcintroimg img{
+    width: 50%;
+}
+
+.funcintroitem{
+    width: 50%;
+    margin-top: 10%;
+    text-align: left;
+
+    opacity: 0;
+}
+
+.funcintrotitle{
+    background-color: #5479ff;
+    color: #fff;
+    padding: 0.5% 4% 1% 4%;
+    border-radius: 30px;
+    font-size: 1.5rem;
+    font-weight: 700;
+
+}
+
+.funcintrotitle_h{
+    background-color: #ffed00;
+    color: #5479ff;
+}
+
+.funcintrosectitle{
+    color: #5479ff;
+    font-weight: 700;
+    font-size: 3.2rem;
+}
+
+.funcintrosectitle_h{
+    color: #ffed00;
+}
+
+.funcintrcontent{
+    width: 80%;
+    margin-top: 30%;
+}
+
+.funcintrcontent_l{
+    color: #fff;
+}
+
+.functitleanim{
+    opacity: 0;
+}
+
+@media (max-width: 1140px) {
+    .functionbg{
+        max-height: 400px;
+    }
+
+    .functionbgbot{
+        height: 90vh;
+        max-height: 750px;
+    }
+
+    .functionbgboxbot{
+        margin-top: 60%;
+    }
+
+    .functitlebox{
+        width: 90%;
+    }
+
+    .funcfirsttitle{
+        font-size: 2.5rem;
+    }
+    
+    .funcbtnbox{
+        display: none;
+    }
+
+    .funcintroimg{
+        width: 100%;
+    }
+
+    .funcintroitem{
+        width: 100%;
+        text-align: center;
+    }
+
+    .funcintrcontent{
+        text-align: left;
+        width: 100%;
+        margin-top: 5%;
+    }
+
+    .funcintrotitle{
+        font-size: 2.5rem;
+    }
+
+    .funcintrotitle_h{
+        background-color: #5479ff;
+        color: #fff;
+    }
+
+    .funcintrosectitle_h{
+        color: #5479ff;
+    }
+
+    .funcintrotitle_l{
+        color: #5479ff;
+        background-color: #ffed00;
+    }
+
+    .funcintrosectitle_l{
+        color: #ffed00;
+    }
+
+    
+}
+
+@media (max-width: 768px) {
+    .functionbgbot{
+        height: 95vh;
+        max-height: 600px;
+    }
+
+    .funcfirsttitle{
+        font-size: 1.7rem;
+    }
+
+    .funcintrotitle{
+        font-size: 1.5rem;
+    }
+
+    .functionbg{
+        max-height: 200px;
+    }
+
+    .funcintrosectitle{
+        font-size: 2.2rem;
+    }
+}

@@ -1,0 +1,180 @@
+.fade-in-1{
+    animation: animY 1.25s ease 0.5s forwards;
+    -webkit-animation: animY 1.25s ease 0.5s forwards;
+    opacity: 0;
+    transform: translateY(100%);
+}
+
+.fade-in-2{
+    animation: animY 1.25s ease 0.8s forwards;
+    -webkit-animation: animY 1.25s ease 0.8s forwards;
+    opacity: 0;
+    transform: translateY(100%);
+}
+
+.fade-in-3{
+    animation: animY 1.25s ease 1.2s forwards;
+    -webkit-animation: animY 1.25s ease 1.2s forwards;
+    opacity: 0;
+    transform: translateY(100%);
+}
+
+.fade-in-4{
+    animation: animY 1.25s ease forwards;
+    -webkit-animation: animY 1.25s ease forwards;
+    opacity: 0;
+    transform: translateY(100%);
+}
+
+.fade-right{
+    animation: animX 1.25s ease forwards;
+    -webkit-animation: animX 1.25s ease forwards;
+    opacity: 0;
+    transform: translateX(-100%);
+}
+
+.fade-left{
+    animation: animX 1.25s ease forwards;
+    -webkit-animation: animX 1.25s ease forwards;
+    opacity: 0;
+    transform: translateX(100%);
+}
+
+.scale-up{
+    animation-name: scaleup;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+
+    -webkit-animation-name: scaleup;
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    
+    opacity: 0;
+    transform: scale(0);
+}
+
+.animdelay1{
+    animation-delay: 0.2s;
+    -webkit-animation-delay: 0.2s;
+}
+
+.animdelay2{
+    animation-delay: 0.3s;
+    -webkit-animation-delay: 0.3s;
+}
+
+.animdelay3{
+    animation-delay: 0.4s;
+    -webkit-animation-delay: 0.4s;
+}
+
+.animdelay4{
+    animation-delay: 0.5s;
+    -webkit-animation-delay: 0.5s;
+}
+
+.animdelay5{
+    animation-delay: 0.6s;
+    -webkit-animation-delay: 0.6s;
+}
+
+.animdelay6{
+    animation-delay: 0.7s;
+    -webkit-animation-delay: 0.7s;
+}
+
+.animdelay7{
+    animation-delay: 0.8s;
+    -webkit-animation-delay: 0.8s;
+}
+
+.animdelay8{
+    animation-delay: 0.9s;
+    -webkit-animation-delay: 0.9s;
+}
+
+.fade-up{
+    animation: animY 1.25s ease forwards;
+    -webkit-animation: animY 1.25s ease forwards;
+    opacity: 0;
+    transform: translateY(50%);
+}
+
+.fade-down{
+    animation: animY 1.25s ease forwards;
+    -webkit-animation: animY 1.25s ease forwards;
+    opacity: 0;
+    transform: translateY(-50%);
+}
+
+.fade-up-delay{
+    animation-name: animY;
+    animation-duration: 1.25s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+
+    -webkit-animation-name: animY;
+    -webkit-animation-duration: 1.25s;
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-fill-mode: forwards;
+    
+    opacity: 0;
+    transform: translateY(50%);
+}
+
+.lined{
+    animation-name: scalex;
+    animation-duration: 1.25s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+
+    -webkit-animation-name: scalex;
+    -webkit-animation-duration: 1.25s;
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-fill-mode: forwards;
+    opacity: 0;
+    transform: scaleX(0);
+    transform-origin: 0% 100%;
+}
+
+@keyframes animY{
+	100% {
+        opacity: 1;
+        transform: translateY(0);
+	}
+}
+
+@keyframes animX{
+	100% {
+        opacity: 1;
+        transform: translateX(0);
+	}
+}
+
+@keyframes scaleup{
+    50% {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+    70% { 
+        transform: scale(.9); 
+    }
+    100% { 
+        opacity: 1;
+        transform: scale(1); 
+    }
+}
+
+@keyframes scalex{
+    10% {
+        opacity: 1;
+       
+    }
+	100% {
+        opacity: 1;
+        transform: scaleX(1);
+	}
+
+}
